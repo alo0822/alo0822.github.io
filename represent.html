@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="description" content="Build your own block!"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="description" content="">
+    <meta name="author" content="">
+  	<title>Annie Lo</title>
+
+  	<!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/styles.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </head>
+
+  <body style="margin-top:70px;margin-bottom:130px;text-align:center">
+  	<!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top my-navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand my-navbar-brand" href="index.html">ALO</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html#about">ABOUT</a></li>
+            <li><a href="index.html#work">WORK</a></li>
+            <li><a href="">RESUME</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="title-img" id="represent"></div>
+
+	<div class="work-title">
+    	<p class="section-title" id="work-title" style="margin-bottom:-5px">Represent!</p>
+    	<i class="date">March 2016</i>
+    	<p class="work-type">Android Development, UI Design</p>
+    </div>
+    <div class="work-body">
+    	<p class="work-text" style="font-size: 1.3em;">Represent! is an Android mobile and wear application that was built for an assignment for the User Interface and Development class (CS160).</p>
+
+    	<p class="work-section-title">OVERVIEW</p>
+    	<p class="work-text"><span style="font-family:LatoBold;padding-right:2px">What: </span> An Android mobile and wear application that provides delivers facts on congressional representatives</p>
+      <p class="work-text"><span style="font-family:LatoBold;padding-right:2px">Goal: </span> Provide easily accessible information on congressional representatives</p>
+    	<p class="work-text"><span style="font-family:LatoBold;padding-right:2px">Users: </span> Voters on the go</p>
+    	<p class="work-text"><span style="font-family:LatoBold;padding-right:2px">Built with: </span>Android, Google Location, Google Geocoding, Twitter, Sunlight Foundation API</p>
+
+      <div style="text-align:left;">
+        <span class="work-text">See the demo video for Represent! </span><a class="work-text" style="color:#ff4095;"href="https://www.youtube.com/watch?v=ZB4SCJQYTpM">here</a><span class="work-text">.</span>
+      </div>
+
+    	<p class="work-section-title">DESIGN</p>
+      <p class="work-text">For this application, I wanted to create a clean and straightforward user interface so users can receive information quickly and easily. For this assignment, we were given the following view requirements:</p>
+      <ul style="margin-bottom:20px">
+        <li class="work-text"><span style="font-family:LatoBold">Main View (Mobile): </span> A home screen welcoming users and allowing them to enter a zip code or use their current location.</li>
+        <li class="work-text"><span style="font-family:LatoBold">Congressional View (Mobile): </span> Display each member of Congress based on location with full name, photo, party, email, website, and latest tweet</li>
+        <li class="work-text"><span style="font-family:LatoBold">Detailed View (Mobile): </span> Detailed view of a member with full name, photo, party, end date of term, committees assigned, and bills sponsored</li>
+        <li class="work-text"><span style="font-family:LatoBold">Main View (Watch): </span> A shortcut glance on the watch that loads the list of representatives looked up from the phone</li>
+        <li class="work-text"><span style="font-family:LatoBold">2012 Vote View (Watch): </span> 2012 US Presidential vote for the same county as the House Rep with the state, county, vote % for Obama, and vote % for Romney.</li>
+        <li class="work-text"><span style="font-family:LatoBold">Shake (Mobile): </span> When the user shakes the watch, it selects a random location in the United States and updates the congressional representatives information accordingly.</li>
+      </ul>
+
+      <p class="work-text">In the first phase, I generated wireframes of each screen with Figma to quickly lay out how I envisioned each view. I decided a serif typeface for the title as it fits the more official feel of elections. The color scheme would be the American colors of red, blue, and white. For the "Represent!" title, I some research for inspiration and came across the classic VOTE button with two lines of white stars. From there, I decided on a more minimal design a thin red line and a single row of white stars below the title.</p>
+    	<div class="work-img">
+        <img src="image/works/represent/wireframe.png" />
+        <i>Wireframes for mobile and wear view</i>
+      </div>
+
+  		<p class="work-section-title">DEVELOPMENT</p>
+      <p class="work-text">In the second phase, I coded the wireframes I designed into functional Android code, and I implemented the functionality of phone and watch interaction. For this phase, I manually inputted data to show in the rendered screens. However, I set up the backend and data structures in preparation for use with APIs.</p>
+      <p class="work-text">In the third phase, I added code to properly interface with APIs that provide real live data. We used the following APIs:</p>
+      <ul style="margin-bottom:20px">
+        <li class="work-text"><span style="font-family:LatoBold">Google Location: </span> Used to get the phone's current location</li>
+        <li class="work-text"><span style="font-family:LatoBold">Google Geocoding: </span> Used to get the county from the phone's current location or zip code to retrieve 2012 Presidential Vote data</li>
+        <li class="work-text"><span style="font-family:LatoBold">Twitter: </span> Used to get the representative's last tweet and their photo</li>
+        <li class="work-text"><span style="font-family:LatoBold">Sunlight Foundation API: </span> Used to get all congressional information about the representatives including party, committee assignments, and bills sponsored</li>
+        <li class="work-text"><span style="font-family:LatoBold">2012 Voting Data in JSON: </span> Used to get data for 2012 Presidential Vote</li>
+      </ul>
+
+      <p class="work-section-title">FINAL PRODUCT</p>
+      <div class="work-img">
+        <img src="image/works/represent/mobile.png" />
+        <i>Final design for mobile views</i>
+      </div>
+      <div class="work-img" style="width:650px">
+        <img src="image/works/represent/watch.png" />
+        <i>Final design for watch views</i>
+      </div>
+
+      <p class="work-text">There were a few design changes I made in the final product from the first design phase. The most significant ones were:</p>
+      <ul style="margin-bottom:20px">
+        <li class="work-text"><span style="font-family:LatoBold">Implementation of Tweet View: </span> In my first design, there was a “Latest Tweet” title and text showing the representative’s latest Tweet. After incorporating the Twitter API, I was able to add a TweetView instead. With a TweetView, users can easily view the Tweet in Twitter by clicking on the Twitter icon that was embedded. Since I used a TweetView instead of plain text, I made the “Latest Tweet” title smaller to balance out the larger text in the TweetView.</li>
+        <li class="work-text"><span style="font-family:LatoBold">Details View text and spacing: </span> I increased the line spacing between and within both committees and bills. There is a lot of information and text present in this view, so this greatly increases the readability of the page. The text color of the introduced dates is also lighter to make the bills section more readable. </li>
+        <li class="work-text"><span style="font-family:LatoBold">Removing watch notifications: </span> Originally, loading the list on mobile will send a notification to the watch, prompting the user to tap the screen and view the list of representatives. Instead, I implemented the phone-to-watch communication so that loading the list on the phone will automatically load the list on the watch. This way, the users don’t have to do one extra step to tap on the screen in order to view the data.</li>
+        <li class="work-text"><span style="font-family:LatoBold">Tapping on rep on watch to view Detailed View: </span> In the initial design for the watch application, when the user taps on a representative a screen will load to prompt the user to tap again to view the detailed view of that representative on the phone. Similar to the last change, I removed this screen to simplify the user flow. The extra “confirmation” tap was unnecessary in this case, since tapping on the representative doesn’t change the current watch view in any way and is an almost instantaneous load on the phone.</li>
+        <li class="work-text"><span style="font-family:LatoBold">Removing photos in watch Main View: </span> In the original design, I had an image of the representative, and then the representative’s name and party. However, while I was implementing the APIs, I had trouble sending images from the phone to the watch. I was short on time, so I decided to omit the image and place the representatives name and party in the center of the screen to increase readability.</li>
+      </ul>
+
+      <!-- <p class="work-section-title">REFLECTION</p> -->
+  		
+
+    </div>
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

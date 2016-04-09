@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="description" content="Build your own block!"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="description" content="">
+    <meta name="author" content="">
+  	<title>Annie Lo</title>
+
+  	<!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/styles.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </head>
+
+  <body style="margin-top:70px;margin-bottom:130px;text-align:center">
+  	<!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top my-navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand my-navbar-brand" href="index.html">ALO</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html#about">ABOUT</a></li>
+            <li><a href="index.html#work">WORK</a></li>
+            <li><a href="">RESUME</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="title-img" id="safespace"></div>
+
+	<div class="work-title">
+    	<p class="section-title" id="work-title" style="margin-bottom:-5px">SafeSpace</p>
+    	<i class="date">Currently in progress</i>
+    	<p class="work-type">Web Development, UI Design</p>
+    </div>
+    <div class="work-body">
+    	<p class="work-text" style="font-size: 1.3em;">SafeSpace is a web application that I am currently developing with a team for a project customer as part of the Software Engineering class (CS169).</p>
+
+    	<p class="work-section-title">OVERVIEW</p>
+    	<p class="work-text"><span style="font-family:LatoBold;padding-right:2px">What: </span> An online anonymous messaging application</p>
+    	<p class="work-text" style="font-family:LatoBold">Goals:</p>
+    		<ul style="margin-bottom:20px">
+    			<li class="work-text">Improve the mental well-being of undergraduate students at UC Berkeley</li>
+    			<li class="work-text">Provide a safe space for peer support and student interactions</li>
+    		</ul>
+    	<p class="work-text"><span style="font-family:LatoBold;padding-right:2px">Users: </span> All undergraduate students at UC Berkeley, regardless of class, race, or background</p>
+    	<p class="work-text"><span style="font-family:LatoBold;padding-right:2px">My Role: </span>UI design, front-end development, back-end development</p>
+    	<p class="work-text"><span style="font-family:LatoBold;padding-right:2px">Built with: </span>Ruby on Rails, HTML&CSS, Bootstrap</p>
+
+    	<p class="work-section-title">ITERATION 0</p>
+    	<p class="work-text">The goal of our first meeting with the customer was to understand the goals and scope of the project. The problem the customers wanted to address was the <span style="font-family:LatoBold">lack of mental health resources</span> available to students at UC Berkeley and the mental health stigma. The customers wanted to create an application that was college friendly, anonymous, and easy to use.</p>
+    	<p class="work-text">We identified <span style="font-family:LatoBold">three main features</span> of the app:</p>
+    	<ul style="margin-bottom:20px">
+  			<li class="work-text">An instructional video and quiz in the sign up process for all users</li>
+  			<li class="work-text">Filter users through ethnicity, age, mental health, etc.</li>
+  			<li class="work-text">Add and chat with buddies</li>
+  		</ul>
+  		<p class="work-text">During this meeting, we also drew up some rough sketches with the customer. Since the messaginig component was the main feature, we decided that it should be the first page for a logged in user.</p>
+  		<div class="work-img">
+  			<img src="image/works/safespace/sketches.png" />
+  			<i>Rough sketches of landing page, search, messaging, and profile settings</i>
+  		</div>
+
+  		<p class="work-section-title">ITERATION 1</p>
+  		<p class="work-text">For this iteration, I created initial wireframes based on the sketches we came up with from last meeting.</p>
+  		<div class="work-img">
+  			<img src="image/works/safespace/wireframes.png" />
+  			<i>Initial wireframes of landing page, search, and messaging</i>
+  		</div>
+  		<p class="work-text">From here, there were a few changes we made before starting on a higher-fidelity prototype for next iteration. There were two significant features that we added:</p>
+  		<ul style="margin-bottom:20px">
+  			<li class="work-text"><span style="font-family:LatoBold">Peer Counselors</span> are trained student counselors with their own general accounts to assist in more difficult situations. Users can recommend their buddy to a peer counselor, and peer counselors don't have to add a user to talk to them.</li>
+  			<li class="work-text"><span style="font-family:LatoBold">The emergency protocol button </span> was moved a more visible and accessible location so users can quickly look for protocol instructions in the event of a crisis.</li>
+  		</ul>
+  		<p class="work-text">For the back end, we decided to first start by creating Users and implementing sign up and log in features. </p>
+
+  		<p class="work-section-title">ITERATION 2</p>
+  		<p class="work-text">After making the changes discussed from the last meeting, these were the higher-fidelity mockups.</p>
+  		<div class="work-img">
+  			<img src="image/works/safespace/hifi.png" />
+  			<i>Higher-fidelity mockups for landing page, search, and messaging</i>
+  		</div>
+  		<p class="work-text">For the back end, we implemented a basic messaging system (sending and receiving messages) and user status. A user will be shown as offline after a certain amount of time of inactivity. In this phase, a user can see and chat with all the users that exist.</p>
+
+  		<p class="work-section-title">WHAT'S NEXT?</p>
+  		<p class="work-text">In the next iteration, we will be implementing web sockets with Faye for real-time messaging, friend requests, and more. Stay tuned for updates!</p>
+
+    </div>
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

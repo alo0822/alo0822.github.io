@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="description" content="Build your own block!"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="description" content="">
+    <meta name="author" content="">
+  	<title>Annie Lo</title>
+
+  	<!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/styles.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </head>
+
+  <body style="margin-top:70px;margin-bottom:130px;text-align:center">
+  	<!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top my-navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand my-navbar-brand" href="index.html">ALO</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html#about">ABOUT</a></li>
+            <li><a href="index.html#work">WORK</a></li>
+            <li><a href="">RESUME</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="title-img" id="musicdb"></div>
+
+	<div class="work-title">
+    	<p class="section-title" id="work-title" style="margin-bottom:-5px">musicDB</p>
+    	<i class="date">November 2015</i>
+    	<p class="work-type">Database Management, Web Development, UI Design</p>
+    </div>
+    <div class="work-body">
+    	<p class="work-text" style="font-size: 1.3em;">musicDB is a web application with searchable music metadata that was the final project for the Database Management class (INFO257). With the Spotify and SetlistFM APIs, we collected a sizeable amount of information, including 44 individuals, 40 groups, 769 releases, 965 concerts, and 17,925 songs. </p>
+
+    	<p class="work-section-title">OVERVIEW</p>
+    	<p class="work-text"><span style="font-family:LatoBold;padding-right:2px">What: </span> A web application with searchable music metadata</p>
+      <p class="work-text"><span style="font-family:LatoBold;padding-right:2px">Goal: </span> Create a space where information about music is consolidated and easily accessible</p>
+    	<p class="work-text"><span style="font-family:LatoBold;padding-right:2px">Users: Music enthusiasts and artists</span></p>
+    	<p class="work-text"><span style="font-family:LatoBold;padding-right:2px">My Role: </span>Database design, UI design, front end development</p>
+    	<p class="work-text"><span style="font-family:LatoBold;padding-right:2px">Built with: </span>Ruby on Rails, HTML&CSS, Google MDL, JavaScript</p>
+
+      <p class="work-section-title">DATABASE DESIGN</p>
+      <p class="work-text">In order to accomplish our goal, the database needed to have a simple yet accurate depiction of the music industry. We focused on how to successfully represent the music aspect of the database, as opposed to social aspects that are commonly associated with listening to music. The database breaks the concept of the music industry to seven separate entities:</p>
+      <ul style="margin-bottom:20px">
+        <li class="work-text"><span style="font-family:LatoBold;padding-right:2px">Individuals: </span>Individual people that make up the music industry and have attributes such as name, birthday, primary and secondary instruments, etc.</li>
+        <li class="work-text"><span style="font-family:LatoBold;padding-right:2px">Members: </span>An intermediate entity that bridges the connection between individuals and groups, and includes information related to that relationship</li>
+        <li class="work-text"><span style="font-family:LatoBold;padding-right:2px">Groups: </span>Bands that release music and can consist of one or many individuals.</li>
+        <li class="work-text"><span style="font-family:LatoBold;padding-right:2px">Releases: </span>Different types of media that can be created by a group</li>
+        <li class="work-text"><span style="font-family:LatoBold;padding-right:2px">Songs: </span>Individually titled pieces of music that groups perform</li>
+        <li class="work-text"><span style="font-family:LatoBold;padding-right:2px">Tracks: </span>Utilized by Songs in order to provide additional data about how the song connects to Releases and Shows</li>
+        <li class="work-text"><span style="font-family:LatoBold;padding-right:2px">Shows: </span>Concerts that groups perform</li>
+        <li class="work-text"><span style="font-family:LatoBold;padding-right:2px">Record Labels: </span>Entities that distribute the releases</li>
+      </ul>
+      <p class="work-text">These entities are the simplest depictions of the many parts that make up the record industry that allow for an accurate and easy way to interpret representation of the metadata related to music.</p>
+      <div class="work-img" style="width:500px">
+        <img src="image/works/musicdb/diagram.png" />
+        <i>Entity-relationship diagram for musicDB</i>
+      </div>
+      
+      <p class="work-text">While this database is a very fair representation of the music industry, there are a couple design decisions that could be improved upon:</p>
+      <ul style="margin-bottom:20px">
+        <li class="work-text"><span style="font-family:LatoBold;padding-right:2px">Include a 1:N relationship between artists and songs: </span>This would allow us to find the original performing artist of a particular song in an easier manner, and for cover performances to be much better represented.</li>
+        <li class="work-text"><span style="font-family:LatoBold;padding-right:2px">Record Label should connect to the Individual entity: </span>In our design, the individuals that are stored are stored as strings, as opposed to having a connection to the Individual entity, allowing for the storage of more information about those people.</li>
+        <li class="work-text"><span style="font-family:LatoBold;padding-right:2px">Incude social aspects of the music discovery: </span>We could create a User entity for the users of the database, a Comments entity that would allow for users to comment on the the pages of other entities, allowing for interaction with other users.</li>
+        <li class="work-text"><span style="font-family:LatoBold;padding-right:2px">Create a separate entity for Genre: </span>This would allow for better interconnection between separate songs, releases, and groups, as the process of joining tables on this category would be vastly improved.</li>
+      </ul>
+
+      <p class="work-section-title">WEBSITE DESIGN</p>
+      <p class="work-text">For the UI interface, I decided to design a website that is simple, elegant, and intuitive to use. Since the main purpose of our database is searching for artists and music, the homepage serves as the main simple search web page with a link to the advanced search.</p>
+      <div class="work-img">
+        <img src="image/works/musicdb/mockups/home.png" />
+        <i>Home page for musicDB</i>
+      </div>
+
+      <p class="work-text">Clicking on the Search tab in the navigation bar also brings the user to a quick search page.</p>
+      <div class="work-img">
+        <img src="image/works/musicdb/mockups/quick search.png" />
+        <i>Quick Search page</i>
+      </div>
+
+      <p class="work-text">The Advanced Search page has multiple search bars for complex queries and includes three drop down menus for each search bar. The first menu is for comparators (=, <, >), the second menu lists the possible attributes for each entity, and the third menu includes conditionals (and, and not, or). The drop down menus allow the user to make complex queries.</p>
+
+      <p class="work-text">In order to allow the user to make queries with more than one entity or attribute, we had to include multiple search bars. However, we had some difficulties with JavaScript and were short on time, so we were unable to implement the Advanced Search page exactly as originally designed. This is very excessive and an overall poor design. Our original design was to set the default as two search bars, with the option to add or remove individual searches.</p>
+      <div class="work-img">
+        <img src="image/works/musicdb/mockups/adv search.jpg" />
+        <i>Original design for Advanced Search page</i>
+      </div>
+
+      <p class="work-text">In order to show results from each entity (Group, Individual, Song, etc.), we used a tabs, where each tab represents an entity.</p>
+
+      <p class="work-text">The information page for each result displays all the attributes that the database has information for.</p>
+
+      <p class="work-text">The input data form allows users to input information for each type of entity.</p>
+      <div class="work-img">
+        <img src="image/works/musicdb/mockups/member form.png" />
+        <i>Input form, with the Individual form selected.</i>
+      </div>
+
+      <p class="work-text">Overall, the UI provides basic inputs that allow users to populate and add seed data while being able to fully make queries. With more time, we would make improvements to the user interface so that it would more accurately reflect the original design. However, this class was not focused on UI design so we did not focus on the design aspects of the project.</p>
+
+
+    </div>
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
