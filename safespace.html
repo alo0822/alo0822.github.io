@@ -46,63 +46,175 @@
 
 	<div class="work-title">
     	<p class="section-title" id="work-title" style="margin-bottom:-5px">SafeSpace</p>
-    	<i class="date">Currently in progress</i>
+    	<i class="date">March - April 2016</i>
     	<p class="work-type">Web Development, UI Design</p>
     </div>
     <div class="work-body">
-    	<p class="work-text" style="font-size: 1.3em;">SafeSpace is a web application that I am currently developing with a team for a project customer as part of the Software Engineering class (CS169).</p>
+    	<p class="work-text" style="font-size: 1.3em;">
+        SafeSpace is a web application that I developed with a team for a project customer
+        as part of the Software Engineering class (CS169).
+      </p>
 
     	<p class="work-section-title">OVERVIEW</p>
-    	<p class="work-text"><span style="font-family:LatoBold;padding-right:2px">What: </span> An online anonymous messaging application</p>
+    	<p class="work-text">
+        <span style="font-family:LatoBold;padding-right:2px">What: </span>
+        An online anonymous messaging application
+      </p>
     	<p class="work-text" style="font-family:LatoBold">Goals:</p>
     		<ul style="margin-bottom:20px">
     			<li class="work-text">Improve the mental well-being of undergraduate students at UC Berkeley</li>
     			<li class="work-text">Provide a safe space for peer support and student interactions</li>
     		</ul>
-    	<p class="work-text"><span style="font-family:LatoBold;padding-right:2px">Users: </span> All undergraduate students at UC Berkeley, regardless of class, race, or background</p>
-    	<p class="work-text"><span style="font-family:LatoBold;padding-right:2px">My Role: </span>UI design, front-end development, back-end development</p>
-    	<p class="work-text"><span style="font-family:LatoBold;padding-right:2px">Built with: </span>Ruby on Rails, HTML&CSS, Bootstrap</p>
+    	<p class="work-text">
+        <span style="font-family:LatoBold;padding-right:2px">Users: </span>
+        All undergraduate students at UC Berkeley, regardless of class, race, or background
+      </p>
+    	<p class="work-text">
+        <span style="font-family:LatoBold;padding-right:2px">My Role: </span>
+        UI design, front-end development, back-end development
+      </p>
+    	<p class="work-text">
+        <span style="font-family:LatoBold;padding-right:2px">Built with: </span>
+        Ruby on Rails, HTML&CSS, Bootstrap
+      </p>
 
     	<p class="work-section-title">ITERATION 0</p>
-    	<p class="work-text">The goal of our first meeting with the customer was to understand the goals and scope of the project. The problem the customers wanted to address was the <span style="font-family:LatoBold">lack of mental health resources</span> available to students at UC Berkeley and the mental health stigma. The customers wanted to create an application that was college friendly, anonymous, and easy to use.</p>
-    	<p class="work-text">We identified <span style="font-family:LatoBold">three main features</span> of the app:</p>
+    	<p class="work-text">
+        The goal of our first meeting with the customer was to understand the goals and scope of the project.
+        The problem the customers wanted to address was the
+        <span style="font-family:LatoBold">lack of mental health resources</span>
+        available to students at UC Berkeley and the mental health stigma. The customers wanted to create an
+        application that was college friendly, anonymous, and easy to use.
+      </p>
+    	<p class="work-text">We identified
+        <span style="font-family:LatoBold">three main features</span>
+        of the app:
+      </p>
     	<ul style="margin-bottom:20px">
   			<li class="work-text">An instructional video and quiz in the sign up process for all users</li>
   			<li class="work-text">Filter users through ethnicity, age, mental health, etc.</li>
   			<li class="work-text">Add and chat with buddies</li>
   		</ul>
-  		<p class="work-text">During this meeting, we also drew up some rough sketches with the customer. Since the messaginig component was the main feature, we decided that it should be the first page for a logged in user.</p>
+  		<p class="work-text">
+        During this meeting, we also drew up some rough sketches with the customer. Since the messaginig component was
+        the main feature, we decided that it should be the first page for a logged in user.
+      </p>
   		<div class="work-img">
   			<img src="image/works/safespace/sketches.png" />
   			<i>Rough sketches of landing page, search, messaging, and profile settings</i>
   		</div>
 
   		<p class="work-section-title">ITERATION 1</p>
-  		<p class="work-text">For this iteration, I created initial wireframes based on the sketches we came up with from last meeting.</p>
+  		<p class="work-text">
+        For this iteration, I created initial wireframes based on the sketches we came up with from last meeting.
+      </p>
   		<div class="work-img">
   			<img src="image/works/safespace/wireframes.png" />
   			<i>Initial wireframes of landing page, search, and messaging</i>
   		</div>
-  		<p class="work-text">From here, there were a few changes we made before starting on a higher-fidelity prototype for next iteration. There were two significant features that we added:</p>
+  		<p class="work-text">
+        From here, there were a few changes we made before starting on a higher-fidelity prototype for next iteration.
+        There were two significant features that we added:
+      </p>
   		<ul style="margin-bottom:20px">
-  			<li class="work-text"><span style="font-family:LatoBold">Peer Counselors</span> are trained student counselors with their own general accounts to assist in more difficult situations. Users can recommend their buddy to a peer counselor, and peer counselors don't have to add a user to talk to them.</li>
-  			<li class="work-text"><span style="font-family:LatoBold">The emergency protocol button </span> was moved a more visible and accessible location so users can quickly look for protocol instructions in the event of a crisis.</li>
+  			<li class="work-text">
+          <span style="font-family:LatoBold">Peer Counselors</span>
+          are trained student counselors with their own general accounts to assist in more difficult situations. Users
+          can recommend their buddy to a peer counselor, and peer counselors don't have to add a user to talk to them.
+        </li>
+  			<li class="work-text">
+          <span style="font-family:LatoBold">The emergency protocol button </span>
+          was moved a more visible and accessible location so users can quickly look for protocol instructions in the
+          event of a crisis.
+        </li>
   		</ul>
-  		<p class="work-text">For the back end, we decided to first start by creating Users and implementing sign up and log in features. </p>
+  		<p class="work-text">
+        For the back end, we decided to first start by creating Users and implementing sign up and log in features.
+      </p>
 
   		<p class="work-section-title">ITERATION 2</p>
-  		<p class="work-text">After making the changes discussed from the last meeting, these were the higher-fidelity mockups.</p>
+  		<p class="work-text">
+        After making the changes discussed from the last meeting, these were the higher-fidelity mockups.
+      </p>
   		<div class="work-img">
   			<img src="image/works/safespace/hifi.png" />
   			<i>Higher-fidelity mockups for landing page, search, and messaging</i>
   		</div>
-  		<p class="work-text">For the back end, we implemented a basic messaging system (sending and receiving messages) and user status. A user will be shown as offline after a certain amount of time of inactivity. In this phase, a user can see and chat with all the users that exist.</p>
+  		<p class="work-text">
+        For the back end, we implemented a basic messaging system (sending and receiving messages) and user status. A
+        user will be shown as offline after a certain amount of time of inactivity. In this phase, a user can see and
+        chat with all the users that exist.
+      </p>
 
-  		<p class="work-section-title">WHAT'S NEXT?</p>
-  		<p class="work-text">In the next iteration, we will be implementing web sockets with Faye for real-time messaging, friend requests, and more. Stay tuned for updates!</p>
+  		<p class="work-section-title">ITERATION 3</p>
+  		<p class="work-text">
+        During the third iteration, we focused on implementing web sockets with Faye for real-time messaging. We also
+        added notifications, so users receive a notification when they receive a new message, and appearing
+        offline, so users can choose to appear offline to other users.
+      </p>
 
+      <p class="work-section-title">ITERATION 4</p>
+      <p class="work-text">
+        In this iteration, we implemented friend requests, search and filter, and setting user profile characteristics.
+      </p>
+      <p class="work-text">
+        With friend requests, the user needs to send another user a friend request that needs to be accepted in order
+        for them to start messaging. Users can add and remove friends, and accept or delete friend requests.
+      </p>
+      <p class="work-text">
+        Search and filter allows users to filter through all the users based on different filter options. These options
+        were defined by the customers, and were based on mental health disorder, gender, ethnicity, academic focus, and
+        religion.
+      </p>
+      <p class="work-text">
+        We also implemented the ability to set user profile characteristics. These profile characteristics are what the
+        search and filter functionality uses to filter through users. This gives the users the ability to set and
+        change their profile characteristics.
+      </p>
+
+      <p class="work-section-title">FINAL WEBSITE AND POSTER</p>
+
+      <p class="work-section-title">REFLECTION</p>
+  		<p class="work-text">
+        During this project, we focused mainly on implementing the backend functionalities for the Users, messaging, and
+        search and filter. We were able to finish most of the important features that the customers wanted. Some of the
+        features we had discussed but didn't implement are:
+      </p>
+      <ul style="margin-bottom:20px">
+        <li class="work-text">Smaller, more specific features the customers wanted.</li>
+        <li class="work-text">The sign up process with an instructional video and a quiz. The details for this from
+        the customers were not ready before our project was due.</li>
+        <li class="work-text">User interface designs. We focused more on completing the backend functionalities, so we didn't
+        have enough time to finalize the user interface and apply the lastest designs.</li>
+      </ul>
+      <p class="work-text">
+        From this project, I learned:
+      </p>
+      <ul style="margin-bottom:20px">
+        <li class="work-text">Web development with Ruby on Rails.</li>
+        <li class="work-text">
+          How to work with customers to create a product based on their requirements. We had weekly meetings with our
+          customers to keep them updated about the progress of the project, check in with them for any changes in
+          their requirements, and discuss the details of the features we were implementing next.
+        </li>
+        <li class="work-text">
+          To work more efficiently with a team. We met up at least once a week to sync up on the tasks that we were
+          working on. Communication was very important, especially since we were not able to meet up everyday.
+        </li>
+        <li class="work-text">
+          To plan for a larger project. This was the largest project that I had taken on before, and we had to plan
+          everything ourselves from the beginning. We discussed with the customers on how they wanted to prioritize the
+          features, and created a timeline for the team of when to work on which parts. We also used Pivotal Tracker to
+          keep track of our stories and tasks.
+        </li>
+      </ul>
+      <p class="work-text">
+        Although we didn't get to some of the tasks that we had wanted to, we still completed a significant amount of
+        work and had created a working product that included all the basic functionalities. Users can sign up, find
+        others, add friends, and message in real-time. Our customers were very happy with what we were able to
+        accomplish in the time we worked together, and it was a great experience for all of us.
+      </p>
     </div>
-
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
