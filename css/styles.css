@@ -245,6 +245,13 @@ a:hover {
 	height: 320px;
 }
 
+#ally {
+	background:url('../image/works/ally/ally.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
 #safespace {
 	background:url('../image/works/safespace/safespace.jpg');
 	background-size: 100%;
@@ -350,6 +357,10 @@ a:hover {
 	line-height: 1.5em;
 	margin-bottom:20px;
 	text-align: left;
+}
+
+.work-text-overview{
+	margin-bottom:15px;
 }
 
 .work-text a {
